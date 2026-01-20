@@ -1,0 +1,28 @@
+.user-card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-name {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.user-role {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.status-online { color: #27ae60; font-weight: bold; }
+.status-offline { color: #95a5a6; }

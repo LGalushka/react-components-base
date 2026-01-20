@@ -1,25 +1,13 @@
 import React from "react";
 import UserCard from "./components/UserCard";
-
-/**
- * 1. Создаем интерфейс для объекта пользователя
- * Это гарантирует, что каждый объект в массиве будет иметь нужные поля 
- */
-
-interface User {
-  id: number;
-  name: string;
-  role: string;
-  isOnline: boolean;
-}
-
+import type { User } from "./types";
 
 const App: React.FC = () => {
   // 2. Имитируем получение данных (например, из базы данных)
   // указывает тип миссива: User[]
   const users: User[] = [
     { id: 1, name: 'Алексей', role: 'Frontend Developer', isOnline: true },
-    { id: 2, name: 'Мария', role: 'UI/UX Designer', isOnline: false },
+    { id: 2, name: 'Мария', role: 'UI/UX Designer', isOnline: true},
     { id: 3, name: "Дмитрий", role: 'Team Lead', isOnline: true },
     { id: 4, name: "Елена", role: 'Backend Developer', isOnline: false }
   ];
@@ -39,13 +27,8 @@ const App: React.FC = () => {
 
         {/** 4. Рендерим список через .map() */}
 
-        {users.map((user)=> (
-          <UserCard
-          key={user.id}
-          name={user.name}
-          role={user.role}
-          isOnline={user.isOnline}
-          />
+        {users.map(user => (
+          <UserCard key={user.id} {...user} />
         ))}
 
       </div>
