@@ -34,7 +34,7 @@ src/
 
  1.Клонируйте репозиторий:
  ```bash
- git clone [https://github.com/твой-логин/my-react-app.git](https://github.com/твой-логин/my-react-app.git)
+ git clone [https://github.com/LGalushka/react-components-base.git](https://github.com/LGalushka/react-components-base.git)
  ```
 
  2.Перейдите в папку проекта:
