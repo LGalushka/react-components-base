@@ -13,7 +13,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div style={{ padding: '40px', fontFamily: 'Arial', backgroundColor: '#f0f2f5'}}>
+    <div style={{ padding: '40px', fontFamily: 'Arial', backgroundColor: '#888888ff'}}>
       <h1 style={{ color: '#1a1a1a', textAlign: 'center' }}>Наша команда</h1>
 
       {/** 3. Контейнер для списка */}
